@@ -7,6 +7,7 @@
 
 import Foundation
 
+// TYPE 1: Singleton
 
 // - Allow extention of the class
 // - So do not set the class to Final
@@ -31,9 +32,18 @@ class AnotherAPIClass: ApiClient {
 // This will allows user to extend the functionality of the class.
 
 extension ApiClient {
-    // Add features here. 
+    // Add features here.
 }
 
 
 // This way we know that there will only be one instance alway
 let client = ApiClient.instance
+
+
+// Type 2: singleton
+
+// Exmaple: You cannot set URLSession.shared, only get the shared property
+//URLSession.shared
+
+
+

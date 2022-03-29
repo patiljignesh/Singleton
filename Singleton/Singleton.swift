@@ -22,13 +22,12 @@ extension InstagramApiClient{
 
 // 1. API Module
 class InstagramApiClient {
-    static let shared = InstagramApiClient()
+    static var shared = InstagramApiClient()
     
     // Generic Method:
     func execute(_ : URLRequest, completion: (Data) -> Void){}
     
 }
-
 
 // 2. Login Module
 

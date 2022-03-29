@@ -12,7 +12,8 @@ import Foundation
 // - Allow extention of the class
 // - So do not set the class to Final
 class ApiClient {
-    static let instance = ApiClient()
+    // Static var makes it Global Mutable State
+    static var instance = ApiClient()
     
     // - By making private initialiser:
     //   -  Making the initialiser private to restric users from
@@ -27,6 +28,8 @@ class ApiClient {
 class AnotherAPIClass: ApiClient {
     
 }
+
+//ApiClient.instance = AnotherAPIClass()
 
 // Example of Extention of the class
 // This will allows user to extend the functionality of the class.
